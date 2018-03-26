@@ -1,0 +1,6 @@
+.settings
+#忽略settings文件夹本身
+.settings/
+#忽略target文件夹内部的内容
+/target
+/target/

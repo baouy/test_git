@@ -1,0 +1,261 @@
+/*配置模态框  */
+#configureModal{
+	width: 100%;
+    height: 100%;
+}
+#configureModal .modal-row .modal-left{
+	float:left;
+	width:230px;
+	height:100%;
+	margin-top:-15px;
+	border-right:1px solid #ddd;
+}
+/* 按钮操作 */
+.new-btn{
+	width:40px;
+	height:25px;
+	line-height:23px;
+	margin:5px 0 5px 5px;
+	color: #36ab7a;
+	border:	1px solid #36ab7a;
+	background-color:#fff;	
+	text-align:center;
+}
+.new-btn:hover{
+	color:#fff;
+	background-color:#36ab7a;
+}
+.delete-btn{
+	width:40px;
+	height:25px;
+	line-height:23px;
+	margin:5px 0 5px 5px;
+	color: #f96868;
+	border:	1px solid #f96868;
+	background-color:#fff;	
+	text-align:center;
+}
+.delete-btn:hover{
+	color:#fff;
+	background-color:#f96868;
+}
+.modal-left .new-btn,.modal-left .delete-btn{
+	margin:10px 0 10px 5px;
+}
+
+
+/*新增底图模态  */
+@media (min-width: 768px){
+	#addNewMap .modal-dialog, #addlayerInfo .modal-dialog,#addlayerIndex .modal-dialog{
+	    top:50%;
+	    width: 380px;
+	    margin: 30px auto;
+	    -webkit-transform:translateY(-60%);
+		-ms-transform: translateY(-60%);
+		-o-transform: translateY(-60%);
+		transform:translateY(-60%);
+	}
+}
+#addNewMapForm>div,#layerInfoForm>div,#layerIndexForm>div{
+	margin:10px;
+}
+
+#addNewMap  .add-new-map,#addlayerInfo .add-layer-info,#addlayerIndex .add-layer-index{
+	position: relative;
+    padding-right: 16px;
+    font-weight: 500;
+    color: #666;	
+}
+#addNewMap  .add-new-map i,#addlayerInfo .add-layer-info i,#addlayerIndex .add-layer-index i{
+	position: absolute;
+    top: -1px;
+    right: 6px;
+    font-size: 14px;
+    color: #f00;
+}
+#addNewMapForm input,#layerInfoForm input,#layerIndexForm input{
+	width:250px;
+	height:28px;
+	padding-left:5px;
+	background-color:#fff;
+}
+#addNewMapForm select,#layerInfoForm select,#layerIndexForm select{
+	width: 250px;
+    height: 28px;
+    margin-left: -4px;
+    padding: 0;
+    padding-left: 5px;
+    background-color: #fff;
+}
+.form-control {
+    display: inline-block;
+    width: 100%;
+    height: 36px;
+    padding: 6px 8px;
+    font-size: 14px;
+    line-height: 1.57142857;
+    color: #76838f;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: -webkit-box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
+    -o-transition: box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
+    transition: box-shadow .25s linear,border .25s linear,color .25s linear,background-color .25s linear;
+    -moz-appearance: none;
+   
+}
+.form-control:focus {
+    border-color: #62a8ea;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(98,168,234,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(98,168,234,.6);
+}
+.form-control.focus, .form-control:focus {
+    border-color: #62a8ea;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#addNewMap .btn,#addlayerInfo .btn,#addlayerIndex .btn{
+	padding: 3px 10px;
+}
+/* 已增加地图列表 */
+#electronicMapList .map-list{
+	position:relative;
+ 	margin: 0px;
+    padding: 10px;
+    color: #585858;
+    font-size: 15px;
+    border-bottom: 1px dashed #ccc;
+    cursor:pointer;
+}
+#electronicMapList .map-list:hover{
+	background-color: rgb(243, 247, 249);
+}
+#electronicMapList .map-list.active{
+	color:#ff1818;
+}
+#electronicMapList .map-list.active .wb-edit{
+	color:#ff1818;
+}
+#electronicMapList .map-list .wb-edit{
+	position: absolute;
+    right: 0px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #80909e;
+    vertical-align: bottom;
+    cursor:pointer;
+}
+#electronicMapList .map-list:hover .wb-edit{
+	display:inline-block;;
+}
+/*右侧  */
+
+#configureModal .modal-row .modal-right{
+	height:100%;;
+	margin:15px 10px 10px 232px;
+}
+/*图层信息表  */
+#layerInfo{
+	position:relative;
+	height: 47%;
+    margin: 0 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;		
+}
+#layerInfo .layer-info-title,#layerIndex .layer-info-title{
+	position: absolute;
+    top: -14px;
+    padding: 0 5px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #579afc;
+    background-color: #fff;
+}
+#layerInfo .layer-info-head,#layerIndex .layer-info-head{
+	height: 37px;	
+}
+.layer-info-head .new-btn{
+	margin-right:10px;
+}
+
+#layerInfo .new-btn,#layerInfo .delete-btn,#layerIndex .new-btn,#layerIndex .delete-btn{
+	float:right;
+}
+#layerInfoList{
+	width:100%;
+	/*为表格设置合并边框模型*/
+    border-collapse: collapse;
+    /*列宽由表格宽度和列宽度设定*/
+    table-layout: fixed;
+}
+#layerInfoList th,#layerIndexList th{
+	height:32px;
+	font-size:14px;
+	color:#666;
+	text-align:center;
+	border-top:1px solid #ccc;
+	background-color:#f7f7f7;
+	border-right:1px solid #ccc;
+}
+#layerInfoList tr th:last-child,#layerIndexList tr th:last-child{
+	border-right:none;
+}
+#layerInfoList tr,#layerIndexList tr{
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+#layerInfoList td,#layerIndexList td{
+	height:32px;
+	font-size: 14px;
+	text-align:center;
+	border-right:1px solid #ccc;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+#layerInfoList tr td:last-child,#layerIndexList tr td:last-child{
+	border-right:none;
+}
+
+.btn-outline.btn-danger {
+    color: #f96868;
+    background-color: transparent;
+}
+.btn-outline.btn-danger:hover{
+	color:#fff;
+	background-color: #f96868;
+}
+
+.btn-outline.btn-primary {
+    color: #62a8ea;
+    background-color: transparent;
+}
+.btn-outline.btn-primary:hover{
+	color: #fff;
+    background-color: #62a8ea;
+}
+.btn-icon.btn-xs, .btn.icon.btn-xs {
+    height: 20px;
+    line-height: 17px;
+    font-size: 12px;
+}
+
+/* 图层索引表 */
+#layerIndex{
+	position:relative;
+	height: 46%;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+}
+#layerIndexList{
+	width:100%;
+	/*为表格设置合并边框模型*/
+    border-collapse: collapse;
+    /*列宽由表格宽度和列宽度设定*/
+    table-layout: fixed;
+}
